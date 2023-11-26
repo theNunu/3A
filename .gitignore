@@ -1,0 +1,62 @@
+# Archivos y directorios generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos locales de desarrollo
+db.sqlite3
+*.sqlite3
+*.db
+
+# Archivos de configuración
+*.env
+*.log
+*.ini
+
+# Directorios de entorno virtual
+venv/
+env/
+
+# Carpeta de archivos estáticos
+staticfiles/
+
+# Carpeta de archivos media (archivos cargados por usuarios)
+media/
+
+# Archivo de configuración local para el IDE (puede variar según el IDE)
+.idea/
+
+# Carpeta de archivos compilados y generados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.class
+*.o
+*.so
+*.pyc
+*.pyo
+*.dll
+*.exe
+
+# Dependencias y entorno virtual
+env/
+venv/
+pip-selfcheck.json
+
+# Archivos de caché
+*.log
+*.cache
+*.vscode/
+
+# Archivos de usuario
+*.suo
+*.user
+*.sln.docstates
+
+# Archivos de configuración de sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas específicas para 
