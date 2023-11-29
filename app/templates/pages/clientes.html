@@ -2,4 +2,18 @@
 
 {% block content %}
 <h1>Clientes</h1>
+
+<!-- Incluyendo el listado de clientes -->
+{% include 'tables/app-cliente/cliente/cliente_list.html' %}
+
+<!-- Incluyendo el detalle de un cliente (por ejemplo, el primer cliente en la lista) -->
+{% if cliente_list %}
+    {% with first_cliente=cliente_list.0 %}
+        {% include 'tables/app-cliente/cliente/cliente_detail.html' with cliente=first_cliente %}
+    {% endwith %}
+{% endif %}
+
+<!-- Incluyendo el formulario para crear un nuevo cliente -->
+{% include 'tables/app-cliente/cliente/cliente_form.html' %}
+
 {% endblock %}

@@ -1,0 +1,18 @@
+<!-- cliente_form.html -->
+<div class="container">
+    <!-- cliente_form.html -->
+
+    <form method="post">
+        {% csrf_token %}
+    
+        {% for field in form %}
+            <div class="form-group">
+                {{ field.label_tag }}
+                {{ field }}
+            </div>
+        {% endfor %}
+    
+        <button type="submit">Guardar</button>
+    </form>
+
+</div>

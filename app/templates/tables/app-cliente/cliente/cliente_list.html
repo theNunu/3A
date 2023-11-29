@@ -1,0 +1,8 @@
+<!-- cliente_list.html -->
+
+<ul>
+    {% for cliente in object_list %}
+      <li><a href="{% url 'cliente_detail' pk=cliente.pk %}">{{ cliente.nombre }}</a></li>
+    {% endfor %}
+  </ul>
+  

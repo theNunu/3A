@@ -1,7 +1,7 @@
 from django import forms
+from .models import Cliente
 
-class newCreateClientForm(forms.Form):
-    nombre = forms.CharField(label="Ingesa tu nickname", max_length=50)
-    correo = forms.EmailField(label="Ingesa tu email", max_length=50)
-    telefono = forms.CharField(label="Número celular", max_length=10)
-
+class ClienteForm(forms.ModelForm):
+    class Meta:
+        model = Cliente
+        fields = ['nombre', 'correo', 'telefono']
