@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import newCreateClientForm
 
 # Create your views here.
 def first (request):
@@ -62,6 +63,12 @@ def Sucursal(request):
 
 def TransaccionInsumo(request):
     return render(request, 'TransaccionInsumo.html')
-
-def login(request):
-    return render(request, 'login.html')
+# Iniciar sesión
+def signIn(request):
+    return render(request, 'accounts/signin.html')
+# Registrarse
+def signUp (request):
+    print(request.GET)
+    return render (request, 'accounts/signup.html', {
+        'form': newCreateClientForm
+    })
